@@ -12,7 +12,7 @@ Este projeto foi desenvolvido especialmente para a participação no **Programa 
 ---
 
 ### 👥 Autores
-* **Aluno(a):** [Seu Nome Completo]
-* **Professor(a) Orientador(a):** [Nome do Professor]
-* **Escola:** [Nome da Sua Escola]
+* **Aluno(a):** [Maria Luiza Da Silva]
+* **Professor(a) Orientador(a):** [Paulo Marcello Silva]
+* **Escola:** [Escola Estadual José Siqueira Rosas]
 * **Ano:** 2026
