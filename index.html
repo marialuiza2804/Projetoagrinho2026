@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estufa Sustentável - Maracujá | Agrinho 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Estufa Sustentável de Maracujá</h1>
+        <p>Agro forte, futuro sustentável; equilíbrio entre produção e meio ambiente</p>
+        <nav>
+            <button onclick="mostrarPagina('simulador')">Simulador</button>
+            <button onclick="mostrarPagina('sobre-mim')">Sobre Mim</button>
+            <button onclick="mostrarPagina('agrinho')">Concurso Agrinho</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="simulador" class="pagina ativa">
+            <h2>Painel de Controle da Estufa</h2>
+            <p>Ajuste os parâmetros abaixo para simular o ambiente ideal para o cultivo do maracujá. O uso eficiente de recursos garante a sustentabilidade!</p>
+            
+            <div class="controles">
+                <div class="controle-item">
+                    <label for="temp">Temperatura da Estufa: <span id="temp-val">25</span>°C</label>
+                    <input type="range" id="temp" min="10" max="45" value="25" oninput="atualizarSimulador()">
+                </div>
+
+                <div class="controle-item">
+                    <label for="umidade-ar">Umidade do Ar: <span id="umidade-ar-val">70</span>%</label>
+                    <input type="range" id="umidade-ar" min="20" max="100" value="70" oninput="atualizarSimulador()">
+                </div>
+
+                <div class="controle-item">
+                    <label for="umidade-solo">Umidade do Solo: <span id="umidade-solo-val">65</span>%</label>
+                    <input type="range" id="umidade-solo" min="10" max="100" value="65" oninput="atualizarSimulador()">
+                </div>
+            </div>
+
+            <div class="resultado" id="resultado-painel">
+                <h3>Status da Plantação:</h3>
+                <p id="status-texto">Aguardando dados...</p>
+                <div id="dica-sustentavel" class="dica"></div>
+            </div>
+        </section>
+
+        <section id="sobre-mim" class="pagina">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Sou aluno do terceiro ano do ensino médio e desenvolvedor deste projeto para o concurso Agrinho 2026.</p>
+            <p>Acredito que a tecnologia é a chave para o futuro do agronegócio. Através deste simulador, quero mostrar como podemos otimizar o uso de água e controlar o clima para produzir mais maracujá, com maior qualidade, sem agredir o meio ambiente.</p>
+            </section>
+
+        <section id="agrinho" class="pagina">
+            <h2>Sobre o Concurso Agrinho 2026</h2>
+            <p>O tema deste ano é <strong>"Agro forte, futuro sustentável; equilíbrio entre produção e meio ambiente"</strong>.</p>
+            <p>O Programa Agrinho busca levar informações sobre saúde, segurança pessoal e ambiental, principalmente às crianças e aos jovens das áreas rurais. Projetos como este simulador ajudam a visualizar na prática como as ações de hoje impactam a agricultura de amanhã.</p>
+            
+            <div class="imagem-container">
+                <img src="caminho-para-sua-imagem.jpg" alt="Imagem do Concurso Agrinho 2026" style="max-width: 100%; border-radius: 8px;">
+                <p><em>(Coloque a imagem oficial do concurso na mesma pasta e altere o "src" no código)</em></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto desenvolvido para o Concurso Agrinho 2026.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

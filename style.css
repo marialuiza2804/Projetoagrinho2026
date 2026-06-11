@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f9f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2e7d32;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav {
+    margin-top: 1.5rem;
+}
+
+nav button {
+    background-color: #ffffff;
+    color: #2e7d32;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+nav button:hover {
+    background-color: #c8e6c9;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Sistema de abas (Páginas) */
+.pagina {
+    display: none;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.pagina.ativa {
+    display: block;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+    color: #2e7d32;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #c8e6c9;
+    padding-bottom: 0.5rem;
+}
+
+/* Controles do Simulador */
+.controles {
+    margin-top: 1.5rem;
+}
+
+.controle-item {
+    margin-bottom: 1.5rem;
+    background: #e8f5e9;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.controle-item label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+input[type=range] {
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Resultados do Simulador */
+.resultado {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 6px solid #ccc;
+    background-color: #fafafa;
+}
+
+.status-ideal { border-color: #4caf50; background-color: #e8f5e9;}
+.status-alerta { border-color: #ff9800; background-color: #fff3e0;}
+.status-critico { border-color: #f44336; background-color: #ffebee;}
+
+.dica {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: #2e7d32;
+    color: white;
+}
+
+.imagem-container {
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #eee;
+    border-radius: 8px;
+}
